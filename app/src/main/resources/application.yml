@@ -1,0 +1,30 @@
+
+#dicovery server
+eureka :
+  instance:
+    host: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8090/eureka
+
+#spring properties :
+
+spring:
+  application:
+    name: app
+  config:
+    import: optional:configserver:http://localhost:8082
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dreamscape
+    username: root
+
+    #jpa properties
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+server:
+  port: 8050
