@@ -16,17 +16,29 @@ public class DreamController {
 
     private final DreamServiceImpl service;
 
-    @PostMapping (value ="/saveDream")
-    public ResponseEntity<DreamDTO> save(@RequestBody DreamDTO dreamDTO){
-        Optional <DreamDTO> savedDreamOptional= Optional.ofNullable(service.save(dreamDTO));
+    @PostMapping(value = "/saveDream")
+    public ResponseEntity<DreamDTO> save(@RequestBody DreamDTO dreamDTO) {
+        Optional<DreamDTO> savedDreamOptional = Optional.ofNullable(service.save(dreamDTO));
         return savedDreamOptional.
                 map(savedDream -> ResponseEntity.ok().body(savedDream))
                 .orElse(ResponseEntity.badRequest().build());
     }
 
     @GetMapping(value = "/findAll")
-    public List<DreamDTO> findAll(){
-        return  service.findAll();
+    public List<DreamDTO> findAll() {
+        return service.findAll();
     }
 
+    @GetMapping(value = "/user/{userId}")
+    public ResponseEntity <List<DreamDTO>> findDreamByUser(
+            @PathVariable ("userId") Integer userId
+    )
+    {
+        return service.findDreamByUser(userId);
+    }
+
+
+
 }
+
+

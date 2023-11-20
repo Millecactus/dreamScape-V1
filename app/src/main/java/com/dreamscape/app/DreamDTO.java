@@ -17,7 +17,7 @@ public class DreamDTO {
     @Id
     private Integer id;
 
-    private  Integer userId;
+    private Integer userId;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd MMM yyyy", locale = "en")
     private Date dateCreate;

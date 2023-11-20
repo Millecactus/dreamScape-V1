@@ -11,7 +11,7 @@ eureka :
 
 spring:
   application:
-    name: app
+    name: User
   config:
     import: optional:configserver:http://localhost:8082
   datasource:
@@ -26,5 +26,9 @@ spring:
     database: mysql
     database-platform: org.hibernate.dialect.MySQLDialect
 
+application:
+    config:
+      user-url: http://localhost:8055/api/v1/user
+
 server:
-  port: 8050
+  port: 8055

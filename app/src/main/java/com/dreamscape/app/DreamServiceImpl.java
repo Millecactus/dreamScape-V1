@@ -3,6 +3,8 @@ package com.dreamscape.app;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -22,4 +24,11 @@ public class DreamServiceImpl implements DreamService{
     public List<DreamDTO> findAll() {
         return repository.findAll();
     }
+
+    @Override
+    public ResponseEntity <List<DreamDTO>> findDreamByUser(Integer userId) {
+        return null;
+    }
+
+
 }
