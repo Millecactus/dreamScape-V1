@@ -1,0 +1,59 @@
+#background{
+    position: relative; /* Pour positionner les éléments contenus */
+  width: 100%;
+  height: 100vh;
+  left: 0%;
+  background-image: url('home1.png');
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Couleur du texte */
+}
+
+h1, p, button{
+  position: absolute; /* Positionnement absolu pour les éléments à superposer */
+  z-index: 1; /* Assure que les éléments apparaissent au premier plan */
+}
+
+h1 {
+  top: 50px; /* Positionnement vertical du titre */
+  left: 50px; /* Positionnement horizontal du titre */
+}
+
+#zoneAffichageReve{
+  top: 120px; /* Positionnement vertical du texte */
+  left: 50px; /* Positionnement horizontal du texte */
+  border :none
+  background-color :none
+}
+
+
+#boutonReveAleatoire {
+  top: 400px; /* Positionnement vertical du bouton */
+  left: 20%; /* Positionnement horizontal du bouton */
+  padding: 10px 20px;
+  background-color: #273691;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#partager{
+  top: 400px; /* Positionnement vertical du bouton */
+  left: 65%; /* Positionnement horizontal du bouton */
+  padding: 10px 20px;
+  background-color: none;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#zoneAffichageReve{
+  top: 400px; /* Positionnement vertical du bouton */
+  left: 65%; /* Positionnement horizontal du bouton */
+  padding: 10px 20px;
+  background-color: #273691;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
