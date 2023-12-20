@@ -1,4 +1,5 @@
-package com.dreamscape.app;
+
+package com.example.User;
 
 import jakarta.persistence.*;
 import lombok.*;

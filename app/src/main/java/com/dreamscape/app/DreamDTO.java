@@ -1,8 +1,11 @@
 package com.dreamscape.app;
 
+import com.example.User.User;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import lombok.*;
 
 import java.util.Date;
@@ -18,6 +21,11 @@ public class DreamDTO {
     private Integer id;
 
     private Integer userId;
+
+    @ManyToOne
+    @JoinColumn(name = "userId" , insertable=false, updatable=false) // Colonne de jointure avec la table User
+    private UserDto user;
+
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd MMM yyyy", locale = "en")
     private Date dateCreate;

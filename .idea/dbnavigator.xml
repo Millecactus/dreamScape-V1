@@ -25,7 +25,7 @@
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="0cd41514-f79a-4705-977a-44adb812b78e" dataset="dreamscape.dream_seq" active-filter-id="" />
     <filter-actions connection-id="0cd41514-f79a-4705-977a-44adb812b78e" dataset="dreamscape.dream" active-filter-id="" />
-    <filter-actions connection-id="0cd41514-f79a-4705-977a-44adb812b78e" dataset="dreamscape.user_dto" active-filter-id="" />
+    <filter-actions connection-id="0cd41514-f79a-4705-977a-44adb812b78e" dataset="dreamscape.user_dto" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="0cd41514-f79a-4705-977a-44adb812b78e" dataset="dreamscape.dreamdto" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">

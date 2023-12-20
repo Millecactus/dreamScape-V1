@@ -2,8 +2,10 @@ package com.example.User;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.*;
+import org.checkerframework.checker.nullness.qual.MonotonicNonNull;
 
 @Table
 @NoArgsConstructor
@@ -25,5 +27,9 @@ public class User {
 
     @Column
     private String email;
+
+    @Column
+    private String password;
+
 
 }

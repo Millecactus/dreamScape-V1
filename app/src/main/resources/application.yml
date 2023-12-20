@@ -28,3 +28,7 @@ spring:
 
 server:
   port: 8050
+
+  application:
+    config:
+      user-url: http://localhost:8055/api/v1/user

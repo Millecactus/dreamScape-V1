@@ -1,10 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Dreamscape - Partage</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/checkout/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
 </head>
-<body>
-$END$
+
+
+<body class="bg-light">
+
+<div class="container">
+    <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="logo.png" alt="" width="150" height="auto">
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8 order-md-1 ">
+            <form class="needs-validation" id="myForm" method="post" action = "/api/v1/user/" novalidate>
+                <div class=" mb-3 ">
+                    <label for="textarea">Partage ton reve  </label>
+                    <textarea class ="form-control" id ="textarea"> </textarea>
+                </div>
+                <div class="mb-3">
+                    <div class="mb-3">
+                        <label for="email">Date </label>
+                        <input type="date" name ="email" class="form-control" id="email" placeholder="Email">
+                        <p id="result"></p>
+                    </div>
+                </div>
+
+                <hr class="mb-4">
+                <button class="btn btn-primary btn-lg btn-block" id= "submitButton" type="submit" >Partager</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2023 Dreamscape</p>
+    </footer>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="../../assets/js/vendor/popper.min.js"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<script src="../../assets/js/vendor/holder.min.js"></script>
+
 </body>
 </html>

@@ -1,20 +1,72 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-    <html lang="en">
+<!doctype html>
+<html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>DreamScape</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    </head>
-    <body>
-    <div id = "background">
-        <div id="home">
-            <button id="boutonReveAleatoire" type ="button"  th:onclick="'javascript:findDream();'" class="btn btn-outline-primary"> Explorer </button>
-            <p id ="zoneAffichageReve"> </p>
-        </div>
-    </div>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
 
-    <script src="script.js"></script>
+        <title>Cover Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body class="text-center">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <header class="masthead mb-auto">
+                <div class="inner ">
+                    <nav class="w-100 h-100 nav nav-masthead justify-content-center">
+        <!--                <a class="nav-link active" href="#">Home</a>-->
+                        <img class="d-block mx-left start-150" src="logo.png" alt="" width="150" height="auto">
+                        </nav>
+                    <nav class="w-100 h-100 nav nav-masthead justify-content-center">
+                        <a class="nav-link" href="connexionFormulaire.html">Se connecter</a>
+                        <a class="nav-link" href="inscriptionFormulaire.html">S'inscrire</a>
+                    </nav>
+                </div>
+
+            </header>
+
+            <main role="main" class="inner-cover">
+                <h1 class="cover-heading">Dreamscape</h1>
+                <p class="lead"> Dreamscape est une plateforme de partage de rêves. Etes vous le seul a rêver de ça ? Partagez et échangez vos expériences et découvrez quelles en sont les raisons.</p>
+                <div>
+                    <p class="lead">
+                        <a href="#" class="btn btn-lg btn-secondary">Explore</a>
+                    <p> Découvre les rêves des autres.</p>
+                    </p>
+                    <p class="lead">
+                        <a href="#" class="btn btn-lg btn-secondary">Partage</a>
+                    <p> Partage ton propre reve.</p>
+                    </p>
+                </div>
+
+
+
+            </main>
+
+            <footer class="mastfoot mt-auto">
+                <div class="inner">
+                    <p>Created by <a href="https://getbootstrap.com/">millecactus </a>. 2023</p>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
+
+
+<!--    <div id = "header">-->
+<!--        <button id="seConnecter" type ="button"  class="btn btn-outline-primary"> Se Connecter </button>-->
+<!--        <button id="inscription" type ="button"  class="btn btn-outline-primary" > <a href="inscriptionFormulaire.html"> Inscription </a></button>-->
+<!--    </div>-->
+
+<!--    <div id = "background">-->
+<!--        <div id="home">-->
+<!--            <button id="boutonReveAleatoire" type ="button"  th:onclick="'javascript:findDream();'" class="btn btn-outline-primary"> Explorer </button>-->
+<!--            <p id ="zoneAffichageReve"> </p>-->
+<!--        </div>-->
+<!--    </div>-->
+

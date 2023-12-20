@@ -1,4 +1,5 @@
-package com.dreamscape.app;
+package com.example.User;
+
 
 import com.example.User.User;
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -23,8 +24,8 @@ public class DreamDTO {
     private Integer userId;
 
     @ManyToOne
-    @JoinColumn(name = "user_id") // Colonne de jointure avec la table User
-    private User user;
+    @JoinColumn(name = "userId", insertable=false, updatable=false) // Colonne de jointure avec la table User
+    private UserDto user;
 
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd MMM yyyy", locale = "en")

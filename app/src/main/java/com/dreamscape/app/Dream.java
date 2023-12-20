@@ -19,7 +19,7 @@ public class Dream {
     @GeneratedValue (strategy = GenerationType.AUTO)
     private Integer id;
 
-    private  Integer userId;
+    private Integer userId;
 
     private Date dateCreate;
 
@@ -27,6 +27,7 @@ public class Dream {
 
     @Column(columnDefinition = "TEXT")
     private String description;
+
 
 
 }

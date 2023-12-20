@@ -26,9 +26,10 @@ spring:
     database: mysql
     database-platform: org.hibernate.dialect.MySQLDialect
 
-application:
-    config:
-      user-url: http://localhost:8055/api/v1/user
 
 server:
   port: 8055
+
+application:
+  config:
+    dream-url: http://localhost:8050/api/v1/dream

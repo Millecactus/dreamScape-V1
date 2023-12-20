@@ -1,5 +1,6 @@
-package com.example.User;
+package com.dreamscape.app;
 
+import com.example.User.User;
 import jakarta.persistence.*;
 
 import lombok.*;
@@ -24,7 +25,7 @@ public class UserDto {
     private String email;
 
 
-    public UserDto fromEntity(User user){
+    public UserDto fromEntity(com.example.User.User user){
         if(user==null){
             throw new IllegalArgumentException("L'objet User est null");
         }
